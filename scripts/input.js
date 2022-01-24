@@ -24,11 +24,13 @@ function countNumberOfLetter(e){
  * @param {Event} e 
  */
 function isPhotoAdded(e) {
-    if (e.currentTarget.value) {
+    if (e.currentTarget.checked) {
         LENGTH_MESSAGE = 5;
+        document.getElementById('label-checkbox').innerHTML = "Photo ajoutée !"
         countNumberOfLetter(document.getElementById('message-input'));
     } else {
         LENGTH_MESSAGE = 10;
+        document.getElementById('label-checkbox').innerHTML = "Ajouter une photo ?"
         countNumberOfLetter(document.getElementById('message-input'));
     }
 }
