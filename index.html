@@ -4,7 +4,17 @@
     <title>Tweetbox</title> 
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <link rel="stylesheet" href="styles/style.css"></style>
-    <script src="scripts/main.js"></script>
+    <script src="scripts/input.js"></script>
 </head>
 <body>
+    <form action="" method="post">
+        </form>
+        <input id="message-input" type="text" name="tweet" placeholder="Message" maxlength="20">
+        <p id="message_length">0/10</p>
+        <label for="photo-checkbox">Ajouter une photo:</label>
+        <input id="photo-checkbox" name="photo-checkbox" type="checkbox">
+        <div></div>
+        <input id="submit" type="submit">
+    </form>
+    <script src="scripts/main.js"></script>
 </body>
